@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuiceBox - Convenient Power Bank Rental</title>
+    <style>
+        /* Add modern, sleek CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: #4CAF50;
+        }
+        
+        /* Add styles for infographics, animations, and machine integration */
+        .infographic {
+            /* Add styles for infographics */
+        }
+        
+        .animation {
+            /* Add styles for animations */
+        }
+        
+        .machine-integration {
+            /* Add styles for machine integration */
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JuiceBox</h1>
+        <p>Convenient Power Bank Rental Solutions</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome to JuiceBox</h2>
+            <p>Stay charged anytime, anywhere with our convenient power bank rental service.</p>
+            <!-- Add an eye-catching animation or image showcasing the JuiceBox service -->
+        </section>
+        
+        <section id="about" class="section">
+            <h2>About JuiceBox</h2>
+            <p>JuiceBox offers easily accessible power bank rental stations at high-traffic locations such as malls, airports, and events, ensuring users can charge their devices anytime, anywhere.</p>
+            <!-- Add an infographic showing JuiceBox's key features and benefits -->
+        </section>
+        
+        <section id="how-it-works" class="section">
+            <h2>How It Works</h2>
+            <!-- Add a step-by-step infographic or animation demonstrating the rental process -->
+            <ol>
+                <li>Download the JuiceBox app</li>
+                <li>Find a nearby JuiceBox station</li>
+                <li>Scan the QR code to rent a power bank</li>
+                <li>Charge your device on the go</li>
+                <li>Return the power bank to any JuiceBox station</li>
+            </ol>
+        </section>
+        
+        <section id="locations" class="section">
+            <h2>Our Locations</h2>
+            <!-- Add an interactive map showing JuiceBox station locations -->
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <!-- Add a contact form or contact information -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 JuiceBox. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Add JavaScript for smooth animations, interactivity, and machine integration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Add animations for sections as they come into view
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                    }
+                });
+            });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Add functionality for machine integration (e.g., simulating power bank availability)
+            function updatePowerBankAvailability() {
+                // Simulate real-time updates of power bank availability at different locations
+            }
+            
+            setInterval(updatePowerBankAvailability, 5000); // Update every 5 seconds
+        });
+    </script>
+</body>
+</html>
